@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HorizontalMenu">
+            <connections>
+                <outlet property="sliderLeadingConstraint" destination="fZE-D6-xjC" id="xqt-rV-UtW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jcp-QQ-x3V" userLabel="ContentView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8A-bv-PbL">
+                            <rect key="frame" x="0.0" y="0.0" width="125.5" height="50"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                            <state key="normal" title="Train">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="trainButtonAction:" destination="-1" eventType="touchUpInside" id="pm2-kZ-OuZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTr-Iy-uEj">
+                            <rect key="frame" x="249.5" y="0.0" width="125.5" height="50"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                            <state key="normal" title="Flight">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="flightButtonAction:" destination="-1" eventType="touchUpInside" id="N8N-nb-smn"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xlS-Ho-szM">
+                            <rect key="frame" x="125" y="45" width="125.5" height="5"/>
+                            <color key="backgroundColor" red="1" green="0.7511184414138582" blue="0.084437593534334332" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="5" id="cBz-MZ-e7p"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LjZ-uU-2Fi">
+                            <rect key="frame" x="124.5" y="0.0" width="125" height="50"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                            <state key="normal" title="Bus">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="busButtonAction:" destination="-1" eventType="touchUpInside" id="MBh-9R-gax"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="LjZ-uU-2Fi" firstAttribute="height" secondItem="v8A-bv-PbL" secondAttribute="height" id="3j1-Rq-8Uw"/>
+                        <constraint firstItem="MTr-Iy-uEj" firstAttribute="top" secondItem="jcp-QQ-x3V" secondAttribute="top" id="53E-kV-LhQ"/>
+                        <constraint firstAttribute="trailing" secondItem="MTr-Iy-uEj" secondAttribute="trailing" id="Fst-YA-C2H"/>
+                        <constraint firstItem="xlS-Ho-szM" firstAttribute="width" secondItem="v8A-bv-PbL" secondAttribute="width" id="K8F-9d-E4L"/>
+                        <constraint firstItem="v8A-bv-PbL" firstAttribute="top" secondItem="jcp-QQ-x3V" secondAttribute="top" id="LSG-R2-laF"/>
+                        <constraint firstItem="LjZ-uU-2Fi" firstAttribute="centerX" secondItem="jcp-QQ-x3V" secondAttribute="centerX" id="MRj-1n-vVT"/>
+                        <constraint firstAttribute="bottom" secondItem="xlS-Ho-szM" secondAttribute="bottom" id="RYX-Ay-e7o"/>
+                        <constraint firstItem="MTr-Iy-uEj" firstAttribute="height" secondItem="v8A-bv-PbL" secondAttribute="height" id="S8r-6c-fs4"/>
+                        <constraint firstItem="v8A-bv-PbL" firstAttribute="height" secondItem="jcp-QQ-x3V" secondAttribute="height" id="Z3i-HA-cMV"/>
+                        <constraint firstItem="v8A-bv-PbL" firstAttribute="leading" secondItem="jcp-QQ-x3V" secondAttribute="leading" id="anQ-KZ-hPf"/>
+                        <constraint firstItem="xlS-Ho-szM" firstAttribute="leading" secondItem="jcp-QQ-x3V" secondAttribute="leading" constant="125" id="fZE-D6-xjC"/>
+                        <constraint firstItem="v8A-bv-PbL" firstAttribute="centerY" secondItem="LjZ-uU-2Fi" secondAttribute="centerY" id="pss-ad-yMm"/>
+                        <constraint firstItem="LjZ-uU-2Fi" firstAttribute="width" secondItem="v8A-bv-PbL" secondAttribute="width" id="tcz-hQ-weI"/>
+                        <constraint firstItem="MTr-Iy-uEj" firstAttribute="width" secondItem="v8A-bv-PbL" secondAttribute="width" id="wVX-qu-vGU"/>
+                        <constraint firstItem="MTr-Iy-uEj" firstAttribute="leading" secondItem="LjZ-uU-2Fi" secondAttribute="trailing" id="yjc-Pa-u7b"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.054901960780000002" green="0.3803921569" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jcp-QQ-x3V" secondAttribute="bottom" id="0eg-0T-zoo"/>
+                <constraint firstItem="jcp-QQ-x3V" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BeV-vN-8FU"/>
+                <constraint firstAttribute="trailing" secondItem="jcp-QQ-x3V" secondAttribute="trailing" id="F0z-q6-SgX"/>
+                <constraint firstItem="jcp-QQ-x3V" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gcZ-iY-SVN"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33.5" y="65"/>
+        </view>
+    </objects>
+</document>
